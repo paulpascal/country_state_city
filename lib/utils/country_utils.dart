@@ -6,7 +6,7 @@ import '../models/country.dart';
 
 Future<List<Country>> _loadCountries() async {
   final res = await rootBundle
-      .loadString('packages/country_state_city/lib/assets/city.json');
+      .loadString('packages/country_state_city/lib/assets/country.json');
   final data = jsonDecode(res) as List;
   return List<Country>.from(
     data.map((item) => Country.fromJson(item)),
