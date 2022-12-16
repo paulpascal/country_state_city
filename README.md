@@ -29,10 +29,11 @@ final states = await getStatesOfCountry('AF'); // Afghanistan
 | `Future<Country?> getCountryFromCode(String countryCode)`                 | Get country from its ISO CODE                                                                 |
 | `Future<List<State>> getAllStates()`                                      | Get world wide states list.                                                                   |
 | `Future<List<State>> getStatesOfCountry(String countryCode)`              | Get the list of states that belongs to a country by the country ISO CODE                      |
-| `Future<State> getStateByCode(String countryCode, String stateCode,)`     | Get a state from its code and its belonging country code                                      |
+| `Future<State?> getStateByCode(String countryCode, String stateCode,)`     | Get a state from its code and its belonging country code                                      |
 | `Future<List<City>> getAllCities()`                                       | Get world wide cities list.                                                                   |
 | `Future<List<City>> getStateCities(String countryCode, String stateCode)` | Get the list of states that belongs to a state by the state ISO CODE and the country ISO CODE |
 | `Future<List<City>> getCountryCities(String countryCode)`                 | Get the list of cities that belongs to a country by the country ISO CODE                      |
+
 
 ## Classes
 
