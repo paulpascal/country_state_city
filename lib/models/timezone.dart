@@ -1,3 +1,4 @@
+/// Handle timezone data such as: (name, gmtOffset, gmtOffsetName, abbreviation, tzName)
 class Timezone {
   final String name;
   final String gmtOffset;

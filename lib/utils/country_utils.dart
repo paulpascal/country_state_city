@@ -6,19 +6,19 @@ import '../models/country.dart';
 
 Future<List<Country>> _loadCountries() async {
   final res = await rootBundle
-      .loadString('packages/country_state_city/lib/assets/city.json');
+      .loadString('packages/country_state_city/lib/assets/country.json');
   final data = jsonDecode(res) as List;
   return List<Country>.from(
     data.map((item) => Country.fromJson(item)),
   );
 }
 
-// Get a list of all cities.
+/// Get world wide countries list.
 Future<List<Country>> getAllCountries() {
   return _loadCountries();
 }
 
-// Get a country from its isCode.
+/// Get country from its ISO CODE
 Future<Country?> getCountryFromCode(String countryCode) async {
   final cities = await _loadCountries();
 
