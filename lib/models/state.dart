@@ -1,3 +1,4 @@
+/// Handle state data such as: (name, countryCode, isoCode, latitude, longitude)
 class State {
   final String name;
   final String countryCode;

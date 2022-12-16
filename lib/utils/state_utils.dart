@@ -13,12 +13,12 @@ Future<List<State>> _loadStates() async {
   );
 }
 
-// Get a list of all States.
+/// Get world wide states list.
 Future<List<State>> getAllStates() {
   return _loadStates();
 }
 
-// Get a list of States belonging to a specific  country.
+/// Get the list of states that belongs to a country by the country ISO CODE
 Future<List<State>> getStatesOfCountry(String countryCode) async {
   final states = await _loadStates();
 
@@ -30,6 +30,7 @@ Future<List<State>> getStatesOfCountry(String countryCode) async {
   return res;
 }
 
+/// Get a state from its code and its belonging country code
 Future<State?> getStateByCode(
   String countryCode,
   String stateCode,

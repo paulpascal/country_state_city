@@ -1,5 +1,6 @@
 import './timezone.dart';
 
+/// Handle country data such as: (name, isoCode, phoneCode, flag, currency, latitude, longitude, timezones)
 class Country {
   final String name;
   final String isoCode;
