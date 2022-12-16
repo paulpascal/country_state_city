@@ -1,6 +1,6 @@
 name: country_state_city
 description: A flutter package to display list of Countries, States and Cities depends on a given country
-version: 0.1.3
+version: 0.1.6
 homepage: https://github.com/paulpascal/country_state_city
 repository: https://github.com/paulpascal/country_state_city
 
@@ -18,7 +18,5 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter:
-
   assets:
     - lib/assets/
-  
