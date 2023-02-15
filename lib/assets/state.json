@@ -2212,11 +2212,18 @@
         "longitude": "-90.73545080"
     },
     {
+        "name": "River State",
+        "isoCode": "RI",
+        "countryCode": "NG",
+        "latitude": "33.74537840",
+        "longitude": "-90.73545080"
+    },
+    {
         "name": "Niger State",
         "isoCode": "NI",
         "countryCode": "NG",
-        "latitude": "9.93092240",
-        "longitude": "5.59832100"
+        "latitude": "6.979268506988246",
+        "longitude": "4.8493319915104225"
     },
     {
         "name": "Edo State",
