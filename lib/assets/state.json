@@ -2212,6 +2212,13 @@
         "longitude": "-90.73545080"
     },
     {
+        "name": "River State",
+        "isoCode": "RI",
+        "countryCode": "NG",
+        "latitude": "33.74537840",
+        "longitude": "-90.73545080"
+    },
+    {
         "name": "Niger State",
         "isoCode": "NI",
         "countryCode": "NG",
