@@ -1,9 +1,9 @@
-# country_state_city
+# country_state_city (WITHOUT Israel (JUST PALESTINE))
 
-![version](https://img.shields.io/badge/version-0.1.3-blue.svg) ![version](https://img.shields.io/badge/NullSefety-True-brightgreen)
+![version](https://img.shields.io/badge/version-0.1.4-blue.svg) ![version](https://img.shields.io/badge/NullSefety-True-brightgreen)
 
 A flutter package to display list of world wide Countries, States and Cities. It also allows to get a list of States and Cities depends on given country (by ISO CODE).
-
+(WITHOUT Israel (JUST PALESTINE))
 ## How to Use
 
 To use this Package, add `country_state_city` as a [dependency in your pubspec.yaml](https://flutter.io/platform-plugins/).
