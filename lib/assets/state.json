@@ -2197,6 +2197,13 @@
         "latitude": "5.87017240",
         "longitude": "8.59880140"
     },
+      {
+        "name": "Rivers State",
+        "isoCode": "RV",
+        "countryCode": "NG",
+        "latitude": "4.8396",
+        "longitude": "6.8793615"
+    },
     {
         "name": "Anambra State",
         "isoCode": "AN",
