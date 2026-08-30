@@ -1,6 +1,6 @@
 # country_state_city
 
-![version](https://img.shields.io/badge/version-0.1.3-blue.svg) ![version](https://img.shields.io/badge/NullSefety-True-brightgreen)
+![version](https://img.shields.io/badge/version-0.2.0-blue.svg) ![version](https://img.shields.io/badge/NullSefety-True-brightgreen)
 
 A flutter package to display list of world wide Countries, States and Cities. It also allows to get a list of States and Cities depends on given country (by ISO CODE).
 
@@ -33,6 +33,9 @@ final states = await getStatesOfCountry('AF'); // Afghanistan
 | `Future<List<City>> getAllCities()`                                       | Get world wide cities list.                                                                   |
 | `Future<List<City>> getStateCities(String countryCode, String stateCode)` | Get the list of states that belongs to a state by the state ISO CODE and the country ISO CODE |
 | `Future<List<City>> getCountryCities(String countryCode)`                 | Get the list of cities that belongs to a country by the country ISO CODE                      |
+| `Future<List<Country>> getCountriesByString(String query)`                | Search for countries by name                                                                  |
+| `Future<List<State>> getStatesByString(String query)`                     | Search for states by name                                                                     |
+| `Future<List<City>> getCitiesByString(String query)`                      | Search for cities by name                                                                     |
 
 
 ## Classes

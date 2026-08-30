@@ -41,3 +41,17 @@ Future<List<City>> getCountryCities(String countryCode) async {
 
   return res;
 }
+
+/// Search for cities by name
+Future<List<City>> getCitiesByString(String query) async {
+  final cities = await _loadCities();
+  if (query.isEmpty) return [];
+  
+  final lowerQuery = query.toLowerCase();
+  final res = cities.where((city) {
+    return city.name.toLowerCase().contains(lowerQuery);
+  }).toList();
+  res.sort((a, b) => a.name.compareTo(b.name));
+  
+  return res;
+}
