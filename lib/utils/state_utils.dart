@@ -43,3 +43,17 @@ Future<State?> getStateByCode(
 
   return res.isEmpty ? null : res.first;
 }
+
+/// Search for states by name
+Future<List<State>> getStatesByString(String query) async {
+  if (query.trim().isEmpty) return [];
+
+  final states = await _loadStates();
+  final lowerQuery = query.toLowerCase();
+  final res = states.where((state) {
+    return state.name.toLowerCase().contains(lowerQuery);
+  }).toList();
+  res.sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
+  
+  return res;
+}

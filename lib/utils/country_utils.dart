@@ -29,3 +29,17 @@ Future<Country?> getCountryFromCode(String countryCode) async {
 
   return res.isEmpty ? null : res.first;
 }
+
+/// Search for countries by name
+Future<List<Country>> getCountriesByString(String query) async {
+  if (query.trim().isEmpty) return [];
+
+  final countries = await _loadCountries();
+  final lowerQuery = query.toLowerCase();
+  final res = countries.where((country) {
+    return country.name.toLowerCase().contains(lowerQuery);
+  }).toList();
+  res.sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
+  
+  return res;
+}
