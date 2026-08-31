@@ -1,6 +1,6 @@
 # country_state_city
 
-![version](https://img.shields.io/badge/version-0.2.0-blue.svg) ![version](https://img.shields.io/badge/NullSefety-True-brightgreen)
+![version](https://img.shields.io/badge/version-0.2.0-blue.svg) ![version](https://img.shields.io/badge/NullSafety-True-brightgreen)
 
 A flutter package to display list of world wide Countries, States and Cities. It also allows to get a list of States and Cities depends on given country (by ISO CODE).
 
